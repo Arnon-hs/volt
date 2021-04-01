@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        \PhpClickHouseLaravel\ClickhouseServiceProvider::class,
         /*
          * Application Service Providers...
          */

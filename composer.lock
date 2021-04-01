@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0777733e0a1c75f74f8c09223bbb966f",
+    "content-hash": "a332ce9fc3dfcf45f5c018407c6c3474",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -695,6 +695,56 @@
             "time": "2020-10-22T13:57:20+00:00"
         },
         {
+            "name": "glushkovds/phpclickhouse-laravel",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/glushkovds/phpclickhouse-laravel.git",
+                "reference": "9fed545f36522690d03320946b380d38e2b8a700"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/glushkovds/phpclickhouse-laravel/zipball/9fed545f36522690d03320946b380d38e2b8a700",
+                "reference": "9fed545f36522690d03320946b380d38e2b8a700",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^7.0|^8.0",
+                "php": ">=7.1.0",
+                "smi2/phpclickhouse": "^1.3",
+                "the-tinderbox/clickhouse-builder": "^3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpClickHouseLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Glushkov",
+                    "email": "amkarovec@gmail.com",
+                    "homepage": "https://github.com/glushkovds"
+                }
+            ],
+            "description": "Adapter of the most popular library https://github.com/smi2/phpClickHouse to Laravel",
+            "homepage": "https://github.com/glushkovds/phpClickHouse-laravel",
+            "keywords": [
+                "clickhouse",
+                "laravel",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/glushkovds/phpclickhouse-laravel/issues",
+                "source": "https://github.com/glushkovds/phpclickhouse-laravel/tree/v1.6.0"
+            },
+            "time": "2021-03-25T12:48:28+00:00"
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.0.1",
             "source": {
@@ -992,6 +1042,70 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.1"
             },
             "time": "2021-03-21T16:25:00+00:00"
+        },
+        {
+            "name": "inertiajs/inertia-laravel",
+            "version": "v0.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inertiajs/inertia-laravel.git",
+                "reference": "726b1e0d4fc399089dd29820a78e40d1c9aad2eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/726b1e0d4fc399089dd29820a78e40d1c9aad2eb",
+                "reference": "726b1e0d4fc399089dd29820a78e40d1c9aad2eb",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.4|^6.0|^7.0|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inertia\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Inertia\\": "src"
+                },
+                "files": [
+                    "./helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "https://reinink.ca"
+                }
+            ],
+            "description": "The Laravel adapter for Inertia.js.",
+            "keywords": [
+                "inertia",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/inertiajs/inertia-laravel/issues",
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v0.3.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/reinink",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-08T13:16:40+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -1428,16 +1542,16 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v2.9.2",
+            "version": "v2.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "504ee92651c187c58640d87f03a7941977ef0149"
+                "reference": "81f3027af262590ffb63f202cba6d055d562a9a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/504ee92651c187c58640d87f03a7941977ef0149",
-                "reference": "504ee92651c187c58640d87f03a7941977ef0149",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/81f3027af262590ffb63f202cba6d055d562a9a1",
+                "reference": "81f3027af262590ffb63f202cba6d055d562a9a1",
                 "shasum": ""
             },
             "require": {
@@ -1488,7 +1602,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2021-03-23T17:31:19+00:00"
+            "time": "2021-03-30T21:29:22+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -2039,6 +2153,66 @@
                 }
             ],
             "time": "2020-12-14T13:15:25+00:00"
+        },
+        {
+            "name": "myclabs/php-enum",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/php-enum.git",
+                "reference": "46cf3d8498b095bd33727b13fd5707263af99421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/46cf3d8498b095bd33727b13fd5707263af99421",
+                "reference": "46cf3d8498b095bd33727b13fd5707263af99421",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "1.*",
+                "vimeo/psalm": "^4.5.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MyCLabs\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP Enum contributors",
+                    "homepage": "https://github.com/myclabs/php-enum/graphs/contributors"
+                }
+            ],
+            "description": "PHP Enum implementation",
+            "homepage": "http://github.com/myclabs/php-enum",
+            "keywords": [
+                "enum"
+            ],
+            "support": {
+                "issues": "https://github.com/myclabs/php-enum/issues",
+                "source": "https://github.com/myclabs/php-enum/tree/1.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mnapoli",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/php-enum",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-02-15T16:11:48+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -3034,6 +3208,123 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "smi2/phpclickhouse",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smi2/phpClickHouse.git",
+                "reference": "17aea5a0c90f7aa9541d74f7567849938eccfcce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smi2/phpClickHouse/zipball/17aea5a0c90f7aa9541d74f7567849938eccfcce",
+                "reference": "17aea5a0c90f7aa9541d74f7567849938eccfcce",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^8.2",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^9.5",
+                "sebastian/comparator": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ClickHouseDB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Strykhar",
+                    "email": "isublimity@gmail.com",
+                    "homepage": "https://github.com/isublimity"
+                }
+            ],
+            "description": "PHP ClickHouse Client",
+            "homepage": "https://github.com/smi2/phpClickHouse",
+            "keywords": [
+                "clickhouse",
+                "client",
+                "curl",
+                "driver",
+                "http",
+                "http client",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/smi2/phpClickHouse/issues",
+                "source": "https://github.com/smi2/phpClickHouse/tree/1.4.1"
+            },
+            "time": "2021-01-20T05:31:30+00:00"
+        },
+        {
+            "name": "svnwa/inertiavuepaginator",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/svnwa/InertiaVuePaginator.git",
+                "reference": "b2881c6e0189c8c24f4eb9ea589f9fdec3bb6dce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/svnwa/InertiaVuePaginator/zipball/b2881c6e0189c8c24f4eb9ea589f9fdec3bb6dce",
+                "reference": "b2881c6e0189c8c24f4eb9ea589f9fdec3bb6dce",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~7|~8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~5|~6",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Svnwa\\InertiaVuePaginator\\InertiaVuePaginatorServiceProvider"
+                    ],
+                    "aliases": {
+                        "InertiaVuePaginator": "Svnwa\\InertiaVuePaginator\\Facades\\InertiaVuePaginator"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Svnwa\\InertiaVuePaginator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "license"
+            ],
+            "authors": [
+                {
+                    "name": "author name"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/svnwa/inertiavuepaginator",
+            "keywords": [
+                "InertiaVuePaginator",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/svnwa/InertiaVuePaginator/issues",
+                "source": "https://github.com/svnwa/InertiaVuePaginator/tree/1.0"
+            },
+            "time": "2021-03-21T22:39:06+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5281,6 +5572,181 @@
                 }
             ],
             "time": "2021-03-06T07:59:01+00:00"
+        },
+        {
+            "name": "the-tinderbox/clickhouse-builder",
+            "version": "4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/the-tinderbox/ClickhouseBuilder.git",
+                "reference": "8da8546fbf598322445a0924a1a1df7ddaa1c965"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/the-tinderbox/ClickhouseBuilder/zipball/8da8546fbf598322445a0924a1a1df7ddaa1c965",
+                "reference": "8da8546fbf598322445a0924a1a1df7ddaa1c965",
+                "shasum": ""
+            },
+            "require": {
+                "myclabs/php-enum": "^1.5",
+                "php": "~7.1",
+                "the-tinderbox/clickhouse-php-client": "^3.0"
+            },
+            "require-dev": {
+                "illuminate/config": "5.*",
+                "illuminate/database": "5.*",
+                "illuminate/events": "5.*",
+                "illuminate/pagination": "5.*",
+                "mockery/mockery": "^0.9.9",
+                "phpunit/phpunit": "^6.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tinderbox\\ClickhouseBuilder\\Integrations\\Laravel\\ClickhouseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tinderbox\\ClickhouseBuilder\\": "src"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "FacedSID",
+                    "email": "ay@imagespark.ru"
+                },
+                {
+                    "name": "Evsign",
+                    "email": "evsign.alex@gmail.com"
+                }
+            ],
+            "description": "Clickhouse sql query builder",
+            "support": {
+                "issues": "https://github.com/the-tinderbox/ClickhouseBuilder/issues",
+                "source": "https://github.com/the-tinderbox/ClickhouseBuilder/tree/4.0.3"
+            },
+            "time": "2021-01-17T21:20:34+00:00"
+        },
+        {
+            "name": "the-tinderbox/clickhouse-php-client",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/the-tinderbox/ClickhouseClient.git",
+                "reference": "44ee56cafa194dd94348fe4e2e282779f187ef76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/the-tinderbox/ClickhouseClient/zipball/44ee56cafa194dd94348fe4e2e282779f187ef76",
+                "reference": "44ee56cafa194dd94348fe4e2e282779f187ef76",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0|~7.0",
+                "php": "~7.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9|^1.4",
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpcov": "^5.0|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "bin": [
+                "bin/ccat_linux",
+                "bin/ccat_darwin"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tinderbox\\Clickhouse\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "FacedSID",
+                    "email": "ay@imagespark.ru"
+                }
+            ],
+            "description": "Clickhouse client over HTTP",
+            "support": {
+                "issues": "https://github.com/the-tinderbox/ClickhouseClient/issues",
+                "source": "https://github.com/the-tinderbox/ClickhouseClient/tree/3.0.0"
+            },
+            "time": "2020-09-24T07:21:08+00:00"
+        },
+        {
+            "name": "tightenco/ziggy",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tighten/ziggy.git",
+                "reference": "be2b257b7a1a4d712e370505324220127595c0ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tighten/ziggy/zipball/be2b257b7a1a4d712e370505324220127595c0ae",
+                "reference": "be2b257b7a1a4d712e370505324220127595c0ae",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.4@dev"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tightenco\\Ziggy\\ZiggyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tightenco\\Ziggy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Coulbourne",
+                    "email": "daniel@tighten.co"
+                },
+                {
+                    "name": "Jake Bathman",
+                    "email": "jake@tighten.co"
+                },
+                {
+                    "name": "Jacob Baker-Kretzmar",
+                    "email": "jacob@tighten.co"
+                }
+            ],
+            "description": "Generates a Blade directive exporting all of your named Laravel routes. Also provides a nice route() helper function in JavaScript.",
+            "homepage": "https://github.com/tighten/ziggy",
+            "keywords": [
+                "Ziggy",
+                "javascript",
+                "laravel",
+                "routes"
+            ],
+            "support": {
+                "issues": "https://github.com/tighten/ziggy/issues",
+                "source": "https://github.com/tighten/ziggy/tree/v1.0.5"
+            },
+            "time": "2021-02-05T15:30:28+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

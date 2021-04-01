@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Events\ChangePriceAtTheClient;
+use App\Listeners\BalanceChangeForUsers;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -27,6 +29,22 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+//        Event::listen(
+//            ChangePriceAtTheClient::class,
+//            [BalanceChangeForUsers::class, 'handle']
+//        );
+//
+//        Event::listen(function (ChangePriceAtTheClient $event) {
+//            //
+//        });
+    }
+    /**
+     * Determine if events and listeners should be automatically discovered.
+     *
+     * @return bool
+     */
+    public function shouldDiscoverEvents()
+    {
+        return true;
     }
 }
