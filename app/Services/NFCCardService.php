@@ -42,9 +42,9 @@ class NFCCardService
     public function saveNFCCardData($data)
     {
         $validator = Validator::make($data, [
-            'sak' => 'required|integer|digits:2',
+            'sak' => 'required|size:2',
             'uid' => 'required|max:14|unique:nfc_cards',
-            'user_id' => 'required|integer|numeric|exists:App\Models\User,id'
+            'user_id' => 'required|numeric|exists:App\Models\User,id'
         ]);
 
         if($validator->fails()) {
@@ -65,7 +65,7 @@ class NFCCardService
     public function updateNFCCardData($data, $id)
     {
         $validator = Validator::make($data, [
-            'sak' => 'required|integer|digits:2',
+            'sak' => 'required|size:2',
             'uid' => 'required|max:14',//|unique:nfc_cards
             'user_id' => 'required|integer|numeric|exists:App\Models\User,id',
             'id' => 'required|integer|numeric|exists:nfc_cards,id'

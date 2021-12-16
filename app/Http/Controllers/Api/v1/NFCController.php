@@ -51,7 +51,6 @@ class NFCController extends Controller
     public function store(Request $request)
     {
         $data = $request->only([
-//            'id',
             'uid',
             'sak',
             'user_id'

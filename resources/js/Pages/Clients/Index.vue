@@ -2,7 +2,7 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                <i class="el-icon-location-information"></i> Clients (Electric filling stations)
+                <i class="el-icon-location-information"></i> EVSE
             </h2>
         </template>
         <div class="py-12">
@@ -43,8 +43,12 @@
                                 </div>
                             </template>
                             <template #default="scope">
+                                <el-link :href="route('clients.show',clients[scope.$index].id)" class="d-inline-block" style="margin-right: 0.5em">
+                                    <el-button size="mini">Show</el-button>
+                                </el-link>
                                 <el-button
                                         size="mini"
+                                        type="warning"
                                         @click="handleEdit(scope.$index, scope.row)">Edit</el-button>
                                 <el-button
                                         size="mini"

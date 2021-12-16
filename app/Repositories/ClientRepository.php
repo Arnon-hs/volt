@@ -31,22 +31,33 @@ class ClientRepository
      */
     public function authClient($data)
     {
-        $nfc = NFCCard::where([
-            'sak' => $data['sa'],
-            'uid' => $data['id']
-        ])->get()->first();
+        try{ //todo красивее
+            $nfc = NFCCard::where([
+                'sak' => $data['sa'],
+                'uid' => $data['id']
+            ])->get()->first();
+            if(!empty($nfc)) {
+                $user = $nfc->user();
+                $permission = $user->balance_eur > 0 ? 1 : 0;
+                $balance_cent = $user->balance_eur * 100;
+            }
+        }catch (\Exception $e) {
+            $permission = 0;
+        }
 
-        $client = $nfc->client();
-        $permission = $client->balance_eur > 0 ? 1 : 0;
-        $balance_cent = $client->balance_eur * 100;
-
-        return [
-            'cc' => $permission, // Разрешение на заправку
-            'bk' => $client->balance_kv, // Остаток баланса в киловатах
-            'br' => $balance_cent, // Остаток баланса в EUR cent
-            'ha' => $client->name, // Имя клиента
-            'st' => time() // Таймстап формирования ответа
-        ];
+        return
+            $permission > 0 ?
+                [
+                    'cc' => $permission, // Разрешение на заправку
+                    'bk' => $user->balance_kv, // Остаток баланса в киловатах
+                    'br' => $balance_cent, // Остаток баланса в EUR cent
+                    'ha' => $user->name, // Имя клиента
+                    'st' => time() // Таймстап формирования ответа
+                ] :
+                [
+                    'cc' => $permission,
+                    'ha' => 'Call 069878787...'
+                ];
     }
 
     /**
@@ -77,7 +88,7 @@ class ClientRepository
      */
     public function getById($id)
     {
-        return $this->client->where('id', $id)->get();
+        return $this->client->where('id', $id)->get()->first();
     }
 
     /**

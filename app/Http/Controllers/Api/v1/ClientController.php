@@ -43,12 +43,15 @@ class ClientController extends Controller
             $result['data'] = $this->clientService->authClient($data);
         } catch (\Exception $e) {
             $result = [
-                'status' => 500,
-                'error' => $e->getMessage()
+                'status' => 401,
+                'data' => [
+                    'cc' => 0,
+                    'ha' => 'Call 069878787...'
+                ]
             ];
         }
 
-        return response()->json($result, $result['status']);
+        return response()->json($result['data'], $result['status']);
     }
 
     /**
@@ -58,7 +61,6 @@ class ClientController extends Controller
      */
     public function stat(Request $request)
     {
-
         $data = $request->only([
             'vi', // Напряжение в сети
             'id', // ID клиента

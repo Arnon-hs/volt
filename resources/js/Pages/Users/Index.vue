@@ -50,6 +50,7 @@
                             </template>
                             <template #default="scope">
                                 <el-button
+                                        type="warning"
                                         size="mini"
                                         @click="handleEdit(scope.$index, scope.row)">Edit</el-button>
                                 <el-button

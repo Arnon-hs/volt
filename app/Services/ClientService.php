@@ -33,7 +33,7 @@ class ClientService
     public function authClient($data)
     {
         $validator = Validator::make($data, [
-            'sa' => 'required|min:2|max:2', // SAK NFC карты
+            'sa' => 'required|size:2', // SAK NFC карты
             'id' => 'required|max:20', // UID NFC карты
             'ct' => 'required' // Таймстамп отправки запроса
         ]);
@@ -42,7 +42,13 @@ class ClientService
             throw new InvalidArgumentException($validator->errors()->first());
         }
 
-        $result = $this->clientRepository->authClient($data);
+        try{
+            $result = $this->clientRepository->authClient($data);
+        } catch (\Exception $e) {
+            Log::error($e->getMessage());
+
+            throw new InvalidArgumentException('Unable to auth client data');
+        }
 
         return $result;
     }

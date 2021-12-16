@@ -17,9 +17,9 @@
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
-                                </jet-nav-link>
+                                <!--<jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">-->
+                                    <!--Dashboard-->
+                                <!--</jet-nav-link>-->
                                 <jet-nav-link :href="route('users.index')" :active="route().current('users.index')">
                                     Users
                                 </jet-nav-link>
@@ -27,7 +27,7 @@
                                     NFC Cards
                                 </jet-nav-link>
                                 <jet-nav-link :href="route('clients.index')" :active="route().current('clients.index')">
-                                    Clients
+                                    EVSE
                                 </jet-nav-link>
                             </div>
                         </div>
@@ -149,9 +149,9 @@
                 <!-- Responsive Navigation Menu -->
                 <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
                     <div class="pt-2 pb-3 space-y-1">
-                        <jet-responsive-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
-                            Dashboard
-                        </jet-responsive-nav-link>
+                        <!--<jet-responsive-nav-link :href="route('dashboard')" :active="route().current('dashboard')">-->
+                            <!--Dashboard-->
+                        <!--</jet-responsive-nav-link>-->
                         <jet-responsive-nav-link :href="route('users.index')" :active="route().current('users.index')">
                             Users
                         </jet-responsive-nav-link>
